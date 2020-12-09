@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            prefHeight="400.0" prefWidth="600.0">
 
-
-
-</AnchorPane>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="201.0" prefWidth="364.0" style="-fx-background-color: #FF7F50;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="298.0" layoutY="83.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="52.0" text="Log" />
+      <PasswordField layoutX="130.0" layoutY="123.0" />
+      <ComboBox layoutX="129.0" layoutY="78.0" prefWidth="150.0" promptText="Admin" />
+      <Label layoutX="50.0" layoutY="74.0" prefHeight="32.0" prefWidth="64.0" text="User:" />
+      <Label layoutX="50.0" layoutY="119.0" prefHeight="32.0" prefWidth="79.0" text="Password:" />
+   </children>
+</Pane>
