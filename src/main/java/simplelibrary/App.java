@@ -16,15 +16,16 @@ public class App extends Application {
 
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage loginPanelStage) throws Exception {
 
-        Pane loginPane = FXMLLoader.load(getClass().getResource("/view/LoginScreenView.fxml"));
-        Scene scene = new Scene(loginPane);
-        primaryStage.setScene(scene);
-        primaryStage.setTitle("Simple Library CRM");
-        primaryStage.show();
-
+        loginPanelStage.setTitle("Simple Library CRM - login panel");
+        Pane loginPanelPane = FXMLLoader.load(getClass().getResource("/view/LoginPanelView.fxml"));
+        Scene scene = new Scene(loginPanelPane);
+        loginPanelStage.setScene(scene);
+        loginPanelStage.show();
     }
+
+
 }
 
 
