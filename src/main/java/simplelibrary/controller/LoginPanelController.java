@@ -14,10 +14,7 @@ public class LoginPanelController {
     @FXML
     public PasswordField passwordField;
 
-    void initialize(){
 
-
-    }
 
 
     public void onAction(ActionEvent actionEvent) {
