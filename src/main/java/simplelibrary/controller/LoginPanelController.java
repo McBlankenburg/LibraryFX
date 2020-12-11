@@ -21,7 +21,6 @@ public class LoginPanelController {
 
         if(passwordField.getText().equals("qwerty"))
             System.out.print("dostęp przyznany");
-            System.out.print("haslo: " + passwordField.getText());
         }
 
 
