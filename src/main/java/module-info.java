@@ -9,4 +9,5 @@ module SimpleLibraryCRM {
     requires javafx.media;
 
     exports simplelibrary;
+    exports simplelibrary.controller;
 }
