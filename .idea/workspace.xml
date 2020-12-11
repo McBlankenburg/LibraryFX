@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27f738ef-8caf-4622-9d71-f63a04ae0d80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_13_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_13_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_13_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_13_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_13_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_13_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_13_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_13_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_13_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_win_13_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_swing_13_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_swing_win_13_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLibraryCRM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleLibraryCRM.iml" afterDir="false" />
-    </list>
+    <list default="true" id="27f738ef-8caf-4622-9d71-f63a04ae0d80" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +34,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607695738789</updated>
-      <workItem from="1607695747896" duration="561000" />
+      <workItem from="1607695747896" duration="1191000" />
     </task>
     <servers />
   </component>
