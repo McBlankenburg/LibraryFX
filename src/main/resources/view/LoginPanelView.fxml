@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="201.0" prefWidth="364.0" style="-fx-background-color: #ff6522;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simplelibrary.controller.LoginPanelController">
-   <children>
-      <Button fx:id="logIn" layoutX="298.0" layoutY="83.0" mnemonicParsing="false" onAction="#onAction" prefHeight="47.0" prefWidth="52.0" text="Log In" />
-      <PasswordField fx:id="passwordField" layoutX="130.0" layoutY="123.0" />
-      <ComboBox layoutX="129.0" layoutY="78.0" prefWidth="150.0" promptText="Admin" />
-      <Label layoutX="50.0" layoutY="74.0" prefHeight="32.0" prefWidth="64.0" text="User:" />
-      <Label layoutX="50.0" layoutY="119.0" prefHeight="32.0" prefWidth="79.0" text="Password:" />
-   </children>
-</Pane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simplelibrary.controller.LoginPanelController">
+   <left>
+      <AnchorPane prefHeight="490.0" prefWidth="310.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="490.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/loginPanelBrand.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="487.0" prefWidth="451.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="32.0" layoutY="143.0" prefHeight="28.0" prefWidth="67.0" text="Email:" />
+            <Label layoutX="31.0" layoutY="203.0" prefHeight="21.0" prefWidth="69.0" text="Password" />
+            <PasswordField fx:id="passwordField" layoutX="109.0" layoutY="194.0" prefHeight="39.0" prefWidth="233.0" promptText="password">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></PasswordField>
+            <Button fx:id="logInButton" layoutX="39.0" layoutY="278.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="246.0" text="Log in" />
+            <TextField fx:id="emailField" layoutX="110.0" layoutY="140.0" prefHeight="39.0" prefWidth="233.0" promptText="janKowalski@edu.p.lodz.pl" />
+            <Button fx:id="signInButton" layoutY="415.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="416.0" text="You are new? Sign In!">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <CheckBox fx:id="rememberMe" layoutX="39.0" layoutY="323.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="104.0" text="Remember me" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></CheckBox>
+            <Label fx:id="invalidDataText" alignment="CENTER" layoutX="109.0" layoutY="233.0" prefHeight="22.0" prefWidth="234.0" text="invalid Login or Password. Please try again." textFill="#f52929" visible="false" />
+            <Hyperlink layoutX="199.0" layoutY="326.0" prefHeight="23.0" prefWidth="72.0" text="password?" />
+            <Label layoutX="155.0" layoutY="329.0" prefHeight="17.0" prefWidth="64.0" text="| Forgot" />
+            </children>
+      </AnchorPane>
+   </center>
+   <top>
+   </top>
+</BorderPane>

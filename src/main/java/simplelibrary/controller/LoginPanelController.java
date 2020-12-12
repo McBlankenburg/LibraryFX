@@ -2,29 +2,20 @@ package simplelibrary.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.*;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
+import javafx.scene.control.*;
 
 public class LoginPanelController {
 
 
-    @FXML
-    public Button logIn;
-
-    @FXML
     public PasswordField passwordField;
+    public Button logInButton;
+    public TextField emailField;
+    public Button signInButton;
+    public CheckBox rememberMe;
+    public Label invalidDataText;
 
-    void initialize(){
 
-
-    }
-
-
-    public void onAction(ActionEvent actionEvent) {
-
-        if(passwordField.getText().equals("qwerty"))
-            System.out.print("dostęp przyznany");
-        }
 
 
 }
+
