@@ -17,13 +17,14 @@ public class App extends Application {
 
 
     @Override
-    public void start(Stage loginPanelStage) throws Exception {
+    public void start(Stage primaryStage) throws Exception {
 
-        loginPanelStage.setTitle("Library - login panel");
+        primaryStage.setTitle("Library - login panel");
         BorderPane loginPanelPane = FXMLLoader.load(getClass().getResource("/view/LoginPanelView.fxml"));
         Scene scene = new Scene(loginPanelPane);
-        loginPanelStage.setScene(scene);
-        loginPanelStage.show();
+        primaryStage.setScene(scene);
+        primaryStage.show();
+
     }
 
 
