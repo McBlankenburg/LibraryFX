@@ -9,17 +9,17 @@ public class DatabaseConnection {
 
     public Connection getConnection(){
 
-        String databaseName = "";
-        String databaseUser = "";
-        String databasePassword = "";
-        String url = "jdbc:mysql://localhost/" + databaseName;
+        String databaseName = "library";
+        String databaseUser = "user";
+        String databasePassword = "abcd";
+        String url = "jdbc:mysql://80.211.240.167:3306/library";
 
         System.out.println ("Database connection established");
-
         try{
+            Class.forName("com.mysql.jdbc.Driver");
 
-            Class.forName("com.mysql.cj.jdbc.Driver");
             databaseLink = DriverManager.getConnection(url, databaseUser, databasePassword);
+
 
         }catch (Exception e){
             e.printStackTrace();

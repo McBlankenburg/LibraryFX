@@ -54,7 +54,9 @@ public class LoginPanelController{
 
         try {
             Statement statement = connectDB.createStatement();
+            statement.executeQuery("USE library");
             ResultSet queryResult = statement.executeQuery(verifyLogin);
+
 
             while(queryResult.next()){
                 if (queryResult.getInt(1) == 1) {

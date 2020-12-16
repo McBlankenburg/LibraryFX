@@ -8,6 +8,7 @@ module SimpleLibraryCRM {
     requires javafx.swing;
     requires javafx.media;
     requires java.sql;
+    requires mysql.connector.java;
 
     exports simplelibrary;
     exports simplelibrary.controller;
