@@ -27,7 +27,10 @@ public class LoginPanelController{
         informationMessage.setText("You try to login");
 
         if(loginField.getText().isBlank() == false && passwordField.getText().isBlank() == false){
+            //validation login&&password
             informationMessage.setText("here we check your login and password");
+
+
         }else if(loginField.getText().isBlank() == true && passwordField.getText().isBlank() == false){
             informationMessage.setText("Please enter your Login");
         }else if(loginField.getText().isBlank() == false && passwordField.getText().isBlank() == true){
