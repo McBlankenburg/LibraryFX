@@ -12,7 +12,7 @@ public class DatabaseConnection {
         String databaseName = "library";
         String databaseUser = "user";
         String databasePassword = "abcd";
-        String url = "jdbc:mysql://80.211.240.167:3306/library";
+        String url = "jdbc:mysql://80.211.240.167:3306/"+databaseName+"?autoReconnect=true&useSSL=false";
 
         System.out.println ("Database connection established");
         try{
