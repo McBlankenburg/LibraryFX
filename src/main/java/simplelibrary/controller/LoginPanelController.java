@@ -3,11 +3,14 @@ package simplelibrary.controller;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.*;
+
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import simplelibrary.DatabaseConnection;
+
+
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -46,9 +49,11 @@ public class LoginPanelController{
 
     }
 
+
     private void validateLoginAndPassword() {
         DatabaseConnection connectionNow = new DatabaseConnection();
         Connection connectDB = connectionNow.getConnection();
+
 
         String verifyLogin = "SELECT count(1) FROM users WHERE login = '" + loginField.getText() + "' AND password ='" + passwordField.getText() +"'";
 
@@ -71,7 +76,6 @@ public class LoginPanelController{
             e.getCause();
 
         }
-
 
     }
 }
