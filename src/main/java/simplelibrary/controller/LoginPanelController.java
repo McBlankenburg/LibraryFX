@@ -7,8 +7,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import simplelibrary.DatabaseConnection;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class LoginPanelController{
 
@@ -29,7 +33,7 @@ public class LoginPanelController{
         if(loginField.getText().isBlank() == false && passwordField.getText().isBlank() == false){
             //validation login&&password
             informationMessage.setText("here we check your login and password");
-
+            validateLoginAndPassword();
 
         }else if(loginField.getText().isBlank() == true && passwordField.getText().isBlank() == false){
             informationMessage.setText("Please enter your Login");
@@ -37,6 +41,33 @@ public class LoginPanelController{
             informationMessage.setText("Please enter your Password");
         } else {
             informationMessage.setText("Please enter Login and Password");
+        }
+
+
+    }
+
+    private void validateLoginAndPassword() {
+        DatabaseConnection connectionNow = new DatabaseConnection();
+        Connection connectDB = connectionNow.getConnection();
+
+        String verifyLogin = "SELECT count(1) FROM users WHERE login = '" + loginField.getText() + "' AND password ='" + passwordField.getText() +"'";
+
+        try {
+            Statement statement = connectDB.createStatement();
+            ResultSet queryResult = statement.executeQuery(verifyLogin);
+
+            while(queryResult.next()){
+                if (queryResult.getInt(1) == 1) {
+                    informationMessage.setText("you are logged!");
+                } else {
+                    informationMessage.setText("Invalid login or password. Please try again!");
+                }
+
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+            e.getCause();
+
         }
 
 
