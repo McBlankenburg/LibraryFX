@@ -19,8 +19,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-
-
+      
         Parent root = FXMLLoader.load(getClass().getResource("/view/LoginPanelView.fxml"));
         primaryStage.setTitle("Library - login panel");
         primaryStage.setScene(new Scene(root));
