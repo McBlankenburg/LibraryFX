@@ -1,18 +1,15 @@
 package simplelibrary.controller;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.*;
 
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import simplelibrary.DatabaseConnection;
 
 
-
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -77,6 +74,26 @@ public class LoginPanelController{
 
         }
 
+    }
+
+    public void createAccountForm(){
+        try{
+            Parent root = FXMLLoader.load(getClass().getResource("/view/RegisterPanelView.fxml"));
+            Stage registerStage = new Stage();
+            registerStage.setTitle("Library - login panel");
+            registerStage.setScene(new Scene(root));
+            registerStage.show();
+
+
+        }catch (Exception e) {
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
+
+
+    public void signInButtonOnAction(ActionEvent actionEvent) {
+        createAccountForm();
     }
 }
 

@@ -2,6 +2,7 @@ package simplelibrary;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
@@ -19,10 +20,10 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
+
+        Parent root = FXMLLoader.load(getClass().getResource("/view/LoginPanelView.fxml"));
         primaryStage.setTitle("Library - login panel");
-        BorderPane loginPanelPane = FXMLLoader.load(getClass().getResource("/view/LoginPanelView.fxml"));
-        Scene scene = new Scene(loginPanelPane);
-        primaryStage.setScene(scene);
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
 
     }
