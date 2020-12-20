@@ -8,20 +8,23 @@ import javafx.stage.Stage;
 
 
 public class App extends Application {
-
-
-    public static void main(String[] args)
-    {
-        launch();
-    }
+    public static void main(String[] args) { launch(); }
 
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-      
-        Parent root = FXMLLoader.load(getClass().getResource("/view/LoginPanelView.fxml"));
-        primaryStage.setTitle("Library - login panel");
+
+        // This code creating connection with FXML
+        Parent root = FXMLLoader.load(getClass().getResource
+                ("/view/LoginPanelView.fxml"));
+
+        // this code using connection to generate Scene
         primaryStage.setScene(new Scene(root));
+
+        //title top panel of the window
+        primaryStage.setTitle("Library - login panel");
+
+        //turn ON Stage
         primaryStage.show();
 
     }

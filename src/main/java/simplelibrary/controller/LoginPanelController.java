@@ -1,6 +1,7 @@
 package simplelibrary.controller;
-import javafx.event.ActionEvent;
-import javafx.fxml.*;
+
+
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -11,10 +12,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-
 public class LoginPanelController {
-
-    @FXML
+    
     public Button logInButton;
     public Button signInButton;
     public CheckBox rememberMe;
@@ -49,7 +48,7 @@ public class LoginPanelController {
 
     }
 
-    public void signInButtonOnAction(ActionEvent actionEvent) throws Exception {
+    public void signInButtonOnAction() throws Exception {
         createRegisterPanelView();
     }
 
@@ -71,7 +70,7 @@ public class LoginPanelController {
 
 
 
-            while (queryResult.next()) {
+            if (queryResult.next()) {
                 if (queryResult.getInt(1) == 1) {
                     informationMessage.setText("you are logged!");
                     return true;
@@ -95,22 +94,40 @@ public class LoginPanelController {
     //create Panel methods
 
     private void createRegisterPanelView() throws Exception {
+
+        // This code creating connection with FXML
             Parent root = FXMLLoader.load(getClass().getResource
                     ("/view/RegisterPanelView.fxml"));
 
-            Stage registerStage = new Stage();
+        // this code using connection to generate Scene
+        Stage registerStage = new Stage();
+
+        // this code using connection to generate Scene
+        registerStage.setScene(new Scene(root));
+
+        //title top panel of the window
             registerStage.setTitle("University Library DBMS - Register Panel");
-            registerStage.setScene(new Scene (root));
+
+        //turn ON Stage
             registerStage.show();
+
     }
 
     private void createMainPanelView() throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource
+
+        // This code creating connection with FXML
+        Parent viewFXML = FXMLLoader.load(getClass().getResource
                 ("/view/MainPanelView.fxml"));
 
+        // new Stage
         Stage registerStage = new Stage();
+
+        // this code using connection to generate Scene
+        registerStage.setScene(new Scene(viewFXML));
+
+        //title top panel of the window
         registerStage.setTitle("University Library DBMS - Main Panel");
-        registerStage.setScene(new Scene (root));
+
         registerStage.show();
     }
 
