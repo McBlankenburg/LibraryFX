@@ -18,6 +18,7 @@
       <AnchorPane prefHeight="487.0" prefWidth="451.0" BorderPane.alignment="CENTER">
          <Label layoutX="32.0" layoutY="143.0" prefHeight="28.0" prefWidth="67.0" text="Login:" />
 
+<<<<<<< HEAD
          <Label layoutX="31.0" layoutY="203.0" prefHeight="21.0" prefWidth="69.0" text="Password:" />
          <PasswordField fx:id="passwordField" layoutX="109.0" layoutY="194.0" prefHeight="39.0" prefWidth="233.0" promptText="password">
             <opaqueInsets>
@@ -37,6 +38,25 @@
                <Font name="System Bold" size="12.0" />
             </font>
          </CheckBox>
+=======
+            <Label layoutX="31.0" layoutY="203.0" prefHeight="21.0" prefWidth="69.0" text="Password" />
+            <PasswordField fx:id="passwordField" layoutX="109.0" layoutY="194.0" prefHeight="39.0" prefWidth="233.0" promptText="password">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></PasswordField>
+            <Button fx:id="logInButton" layoutX="39.0" layoutY="278.0" mnemonicParsing="false" onAction="#LogInButtonOnAction" prefHeight="45.0" prefWidth="246.0" text="Log in" />
+            <TextField fx:id="loginField" layoutX="110.0" layoutY="140.0" prefHeight="39.0" prefWidth="233.0" promptText="JanKowalski" />
+           
+            <Button fx:id="signInButton" layoutY="415.0" mnemonicParsing="false" onAction="#signInButtonOnAction" prefHeight="72.0" prefWidth="416.0" text="You are new? Sign In!">
+
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <CheckBox fx:id="rememberMe" layoutX="39.0" layoutY="323.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="104.0" text="Remember me" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></CheckBox>
+>>>>>>> 95fa37ba95b243757040b6cba83dd2558e301ffe
 
          <Label fx:id="informationMessage" alignment="CENTER" layoutX="109.0" layoutY="233.0" prefHeight="22.0" prefWidth="234.0" text="" textFill="#f52929" visible="true" />
 
