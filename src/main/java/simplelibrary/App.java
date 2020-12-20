@@ -6,6 +6,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/* LogInButton Verification
+   login: test
+   password: 1234
+ */
 
 public class App extends Application {
     public static void main(String[] args) { launch(); }
