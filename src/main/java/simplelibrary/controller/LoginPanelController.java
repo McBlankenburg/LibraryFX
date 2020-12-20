@@ -30,14 +30,14 @@ public class LoginPanelController{
     public void LogInButtonOnAction(ActionEvent actionEvent) {
         informationMessage.setText("You try to login");
 
-        if(loginField.getText().isBlank() == false && passwordField.getText().isBlank() == false){
+        if(!loginField.getText().isBlank() && !passwordField.getText().isBlank()){
             //validation login&&password
             informationMessage.setText("here we check your login and password");
             validateLoginAndPassword();
 
-        }else if(loginField.getText().isBlank() == true && passwordField.getText().isBlank() == false){
+        }else if(loginField.getText().isBlank() && !passwordField.getText().isBlank()){
             informationMessage.setText("Please enter your Login");
-        }else if(loginField.getText().isBlank() == false && passwordField.getText().isBlank() == true){
+        }else if(!loginField.getText().isBlank() && passwordField.getText().isBlank()){
             informationMessage.setText("Please enter your Password");
         } else {
             informationMessage.setText("Please enter Login and Password");
