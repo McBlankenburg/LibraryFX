@@ -29,6 +29,7 @@ public class LoginPanelController {
         informationMessage.setText("You try to login");
 
         if (!loginField.getText().isBlank() && !passwordField.getText().isBlank()) {
+
             //validation login&&password
             informationMessage.setText("here we check your login and password");
             boolean isConnected = validateLoginAndPassword();
@@ -82,12 +83,17 @@ public class LoginPanelController {
 
             }
         } catch (Exception e) {
+
             e.printStackTrace();
             e.getCause();
+        }
+    }
+
 
         }
 
         return false;
+
     }
 
 
