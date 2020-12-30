@@ -7,7 +7,7 @@
 <?import javafx.scene.text.*?>
 
 
-<BorderPane fx:controller="simplelibrary.controller.LoginPanelController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:controller="simplelibrary.controller.introStage.LoginPanelC" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <AnchorPane prefHeight="490.0" prefWidth="310.0" BorderPane.alignment="CENTER">
          <ImageView fitHeight="490.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">

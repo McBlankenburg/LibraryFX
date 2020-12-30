@@ -11,5 +11,6 @@ module SimpleLibraryCRM {
     requires mysql.connector.java;
 
     exports simplelibrary;
-    exports simplelibrary.controller;
+    exports simplelibrary.controller.introStage;
+    exports simplelibrary.controller.mainStage;
 }

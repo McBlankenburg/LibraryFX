@@ -18,20 +18,20 @@ public class App extends Application {
 
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage introStage) throws Exception {
 
         // This code creating connection with FXML
         Parent root = FXMLLoader.load(getClass().getResource
                 ("/view/LoginPanelView.fxml"));
 
         // this code using connection to generate Scene
-        primaryStage.setScene(new Scene(root));
+        introStage.setScene(new Scene(root));
 
         //title top panel of the window
-        primaryStage.setTitle("Library - login panel");
+        introStage.setTitle("Library - login panel");
 
         //turn ON Stage
-        primaryStage.show();
+        introStage.show();
 
     }
 
