@@ -87,13 +87,7 @@ public class LoginPanelController {
             e.printStackTrace();
             e.getCause();
         }
-    }
-
-
-        }
-
         return false;
-
     }
 
 
