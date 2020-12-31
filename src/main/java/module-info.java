@@ -12,5 +12,5 @@ module SimpleLibraryCRM {
 
     exports simplelibrary;
     exports simplelibrary.controller.introStage;
-    exports simplelibrary.controller.mainStage;
+    exports simplelibrary.controller.appStage;
 }
