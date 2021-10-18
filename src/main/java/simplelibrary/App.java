@@ -29,7 +29,7 @@ public class App extends Application {
         introStage.setScene(new Scene(root));
 
         //title top panel of the window
-        introStage.setTitle("example");
+        introStage.setTitle("Przykladowa aplikacja");
 
         //turn ON Stage
         introStage.show();
